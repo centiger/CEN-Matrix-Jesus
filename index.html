@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>예수시대 Matrix</title>
+<meta name="theme-color" content="#506FEF" />
+<meta name="description" content="CEN Bible 예수시대 Matrix - 복음의 시대" />
+<link rel="manifest" href="manifest.json" />
+<style>
+:root{
+  --bg:#f6f7ff;--ink:#18213d;--muted:#6c7390;--main:#5B7FFF;--deep:#314dcc;--soft:#e8ecff;--line:#b8c4ff;--card:#ffffff;--gold:#f6c65b;
+}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top,#eef2ff 0,#f8f9ff 45%,#f3f5ff 100%);color:var(--ink)}
+.app{min-height:100vh;display:flex;flex-direction:column}.top{padding:18px 18px 8px;text-align:center}.badge{display:inline-flex;gap:6px;align-items:center;background:var(--soft);color:var(--deep);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:800}.top h1{margin:10px 0 4px;font-size:27px;letter-spacing:-.04em}.top p{margin:0;color:var(--muted);font-size:14px}.timeline{margin:12px auto 4px;max-width:720px;padding:10px 14px;border-radius:18px;background:#fff;border:1px solid #dde3ff;box-shadow:0 8px 22px rgba(49,77,204,.08)}.years{display:flex;justify-content:space-between;gap:6px;font-size:11px;color:#4a56a8;font-weight:800}.events{display:flex;justify-content:space-between;gap:6px;font-size:10px;color:#6d7390;margin-top:4px}.matrix-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:8px 14px 18px}.matrix{position:relative;width:min(96vw,760px);height:min(72vh,620px);min-height:520px;border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(244,247,255,.94));border:1px solid #dbe2ff;box-shadow:0 22px 55px rgba(30,52,140,.16);overflow:hidden}.matrix:before{content:"";position:absolute;inset:9%;border:1px dashed rgba(91,127,255,.28);border-radius:50%;}.center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:245px;min-height:245px;border-radius:50%;background:radial-gradient(circle,#ffffff 0,#eef2ff 72%,#dde6ff 100%);border:2px solid #b9c7ff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;box-shadow:0 18px 35px rgba(49,77,204,.16);z-index:2}.center .era{font-size:25px;font-weight:900;letter-spacing:-.05em}.center .sub{margin-top:3px;color:var(--deep);font-weight:900}.center .msg{margin-top:12px;font-size:13px;line-height:1.45;color:#26325b}.center .verse{margin-top:9px;font-size:12px;line-height:1.45;color:#4d5580}.hub{position:absolute;width:150px;min-height:132px;border:none;border-radius:24px;background:#fff;color:var(--ink);box-shadow:0 12px 28px rgba(32,55,150,.14);border:1px solid #dbe2ff;padding:14px 10px;display:flex;flex-direction:column;align-items:center;text-align:center;cursor:pointer;transition:.18s transform,.18s box-shadow}.hub:active{transform:scale(.97)}.hub .icon{font-size:34px}.hub .name{font-weight:900;font-size:17px;margin-top:4px}.hub .desc{font-size:11px;color:#6b7292;margin-top:4px;line-height:1.35}.hub .chip{margin-top:8px;background:var(--soft);color:var(--deep);font-size:10px;font-weight:800;padding:4px 8px;border-radius:999px}.h-incarnation{left:7%;top:31%}.h-ministry{left:11%;bottom:8%}.h-revelation{left:50%;top:7%;transform:translateX(-50%)}.h-cross{right:7%;top:31%}.h-resurrection{right:11%;bottom:8%}.actions{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);z-index:3;display:flex;gap:8px}.btn{border:none;border-radius:999px;background:var(--deep);color:#fff;font-weight:900;padding:11px 16px;box-shadow:0 8px 20px rgba(49,77,204,.25);cursor:pointer}.btn.secondary{background:#fff;color:var(--deep);border:1px solid #cfd8ff}.modal-back{display:none;position:fixed;inset:0;background:rgba(10,16,40,.38);z-index:20;align-items:center;justify-content:center;padding:18px}.modal{width:min(94vw,480px);background:#fff;border-radius:26px;padding:20px;box-shadow:0 25px 70px rgba(0,0,0,.25)}.modal h2{margin:0 0 12px;font-size:22px}.hub-list{display:grid;gap:10px}.hub-link{border:1px solid #dce3ff;background:#f8f9ff;border-radius:18px;padding:13px 14px;text-align:left;font-weight:900;color:var(--ink);text-decoration:none}.hub-link small{display:block;color:var(--muted);font-weight:600;margin-top:3px}.close{margin-top:14px;width:100%}@media(max-width:520px){.top h1{font-size:23px}.matrix{height:650px;min-height:650px;border-radius:24px}.center{width:205px;min-height:205px}.center .era{font-size:22px}.center .msg{font-size:12px}.hub{width:126px;min-height:116px;border-radius:20px;padding:10px 7px}.hub .icon{font-size:28px}.hub .name{font-size:15px}.hub .desc{font-size:10px}.h-incarnation{left:4%;top:32%}.h-cross{right:4%;top:32%}.h-ministry{left:6%;bottom:10%}.h-resurrection{right:6%;bottom:10%}.h-revelation{top:8%}.actions{bottom:14px}.years,.events{font-size:9px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <span class="badge">✝️ CEN Bible 시대별총람</span>
+    <h1>예수시대 Matrix</h1>
+    <p>BC 4 ~ AD 33 · 복음의 시대</p>
+    <div class="timeline">
+      <div class="years"><span>BC 4</span><span>AD 27</span><span>AD 29</span><span>AD 30</span><span>AD 33</span></div>
+      <div class="events"><span>탄생</span><span>사역 시작</span><span>계시</span><span>십자가</span><span>부활·승천</span></div>
+    </div>
+  </header>
+  <main class="matrix-wrap">
+    <section class="matrix" aria-label="예수시대 매트릭스">
+      <button class="hub h-revelation" onclick="location.href='hubs/index.html?hub=revelation'">
+        <span class="icon">✨</span><span class="name">메시아 계시</span><span class="desc">예수는 누구신가</span><span class="chip">준비중</span>
+      </button>
+      <button class="hub h-incarnation" onclick="location.href='hubs/index.html?hub=incarnation'">
+        <span class="icon">👶</span><span class="name">성육신 허브</span><span class="desc">말씀이 육신이 되심</span><span class="chip">입장</span>
+      </button>
+      <button class="hub h-cross" onclick="location.href='hubs/index.html?hub=cross'">
+        <span class="icon">✝️</span><span class="name">십자가</span><span class="desc">구속 완성</span><span class="chip">준비중</span>
+      </button>
+      <button class="hub h-ministry" onclick="location.href='hubs/index.html?hub=ministry'">
+        <span class="icon">🌿</span><span class="name">사역 허브</span><span class="desc">하나님 나라 선포</span><span class="chip">준비중</span>
+      </button>
+      <button class="hub h-resurrection" onclick="location.href='hubs/index.html?hub=resurrection'">
+        <span class="icon">👑</span><span class="name">부활 허브</span><span class="desc">승리와 새 창조</span><span class="chip">준비중</span>
+      </button>
+      <div class="center">
+        <div class="era">예수시대</div>
+        <div class="sub">복음의 시대</div>
+        <div class="msg">하나님 나라가 임하고<br>구속이 성취되다</div>
+        <div class="verse">“말씀이 육신이 되어<br>우리 가운데 거하시매”<br><b>(요 1:14)</b></div>
+      </div>
+      <div class="actions"><button class="btn" onclick="openHubList()">허브 목록</button><button class="btn secondary" onclick="location.href='hubs/index.html?hub=incarnation'">성육신 시작</button></div>
+    </section>
+  </main>
+</div>
+<div class="modal-back" id="hubModal"><div class="modal"><h2>예수시대 허브 목록</h2><div class="hub-list" id="hubList"></div><button class="btn close" onclick="closeHubList()">닫기</button></div></div>
+<script>
+const HUBS=[
+ {id:'incarnation',icon:'👶',title:'성육신 허브',sub:'수태고지 · 예수 탄생 · 애굽 피난 · 나사렛 성장',ready:true},
+ {id:'ministry',icon:'🌿',title:'사역 허브',sub:'세례 · 광야시험 · 제자 부르심 · 하나님 나라 선포',ready:false},
+ {id:'revelation',icon:'✨',title:'메시아 계시 허브',sub:'오병이어 · 신앙고백 · 변화산 · 나사로 부활',ready:false},
+ {id:'cross',icon:'✝️',title:'십자가 허브',sub:'예루살렘 입성 · 최후의 만찬 · 겟세마네 · 십자가',ready:false},
+ {id:'resurrection',icon:'👑',title:'부활 허브',sub:'빈 무덤 · 부활 현현 · 지상명령 · 승천',ready:false}
+];
+function openHubList(){const box=document.getElementById('hubList');box.innerHTML=HUBS.map(h=>`<a class="hub-link" href="hubs/index.html?hub=${h.id}">${h.icon} ${h.title}${h.ready?'':' <small>준비중 화면</small>'}<small>${h.sub}</small></a>`).join('');document.getElementById('hubModal').style.display='flex'}
+function closeHubList(){document.getElementById('hubModal').style.display='none'}
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+</script>
+</body>
+</html>
