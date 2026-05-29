@@ -60,7 +60,7 @@ const HUBS=[
  {id:'incarnation',icon:'👶',title:'성육신 허브',sub:'수태고지 · 예수 탄생 · 애굽 피난 · 나사렛 성장',ready:true},
  {id:'ministry',icon:'🌿',title:'사역 허브',sub:'세례 · 광야시험 · 제자 부르심 · 하나님 나라 선포',ready:true},
  {id:'revelation',icon:'✨',title:'메시아 계시 허브',sub:'오병이어 · 신앙고백 · 변화산 · 나사로 부활',ready:true},
- {id:'cross',icon:'✝️',title:'십자가 허브',sub:'예루살렘 입성 · 최후의 만찬 · 겟세마네 · 십자가',ready:false},
+ {id:'cross',icon:'✝️',title:'십자가 허브',sub:'예루살렘 입성 · 최후의 만찬 · 겟세마네 · 십자가',ready:true},
  {id:'resurrection',icon:'👑',title:'부활 허브',sub:'빈 무덤 · 부활 현현 · 지상명령 · 승천',ready:false}
 ];
 function openHubList(){const box=document.getElementById('hubList');box.innerHTML=HUBS.map(h=>`<a class="hub-link" href="hubs/index.html?hub=${h.id}">${h.icon} ${h.title}${h.ready?'':' <small>준비중 화면</small>'}<small>${h.sub}</small></a>`).join('');document.getElementById('hubModal').style.display='flex'}
